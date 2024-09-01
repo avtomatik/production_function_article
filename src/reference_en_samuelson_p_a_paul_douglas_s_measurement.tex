@@ -1,0 +1,367 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,main=russian]{babel}
+%\usepackage[T2A]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{enumerate}
+\usepackage{physics}
+\title{Paul Douglas's Measurement of Production Functions and Marginal Productivities}
+\author{
+	Paul A. Samuelson\\
+	\emph{Massachusetts Institute of Technology}\thanks{I owe thanks to the National Science Foundation for financial aid and to Aase Huggins and Kate Crowley for editorial assistance.}
+}
+\makeatletter
+\def\thanks#1{\protected@xdef\@thanks{\@thanks
+        \protect\footnotetext{#1}}}
+\makeatother
+\begin{document}
+\selectlanguage{english}
+\maketitle
+
+%[Page 923]
+\begin{quote}
+``\dots he was the greatest labor economist in the first 50 years of this century.'' [Glen Cain]
+\end{quote}
+
+\noindent If Nobel Prizes had been awarded in economics after 1901, as they were in physics, chemistry, medicine, peace, and literature, Paul H. Douglas would probably have received one before World War II for his pioneering econometric attempts to measure marginal productivities and quantify the demands for factor inputs. The Cobb-Douglas function, \(P=bL^kC^{1-k}\) or \(Q=bV_1^{k_1}\text{\dots}V_n^{k_n}\) with \(\sum_{j=1}^n k_j = 1\), receives thousands of citations in present-day economics. Controversies still rage over the admissibility of aggregation in the theory of capital and in connection with the production function. And, it was Douglas, I seem to recall, who first introduced into our vocabulary the adjective ``cross-sectional'' for studies that use observations at one point in time as a scatter for estimating functional relationships.
+
+From 1927 to 1976, when he died in his eighty-fifth year still with his boots on and with his posthumous article (Douglas 1976) in press, Paul Douglas persevered in his studies whenever public service gave him the leisure to do so. Not long before he died, and after his health was already in a precarious state, I was astonished to pick up my M.I.T. phone and hear the voice of my old teacher, still looking for able assistants to replace those who had died, retired, and grown disabled on the quest for the Holy Grail.
+
+%[Journal of Political Economy, 1979, vol. 87, no. 5, pt. 1]
+
+%© 1979 by The University of Chicago. 0022-3808/79/8751-0002$01.65
+
+%[Page 924]
+
+Douglas felt at the beginning that his work met with unfriendly opposition, a feeling of martyrdom that abated over the years but never quite disappeared. Indeed, I doubt that he ever appreciated the degree to which his scientific contribution had become part of every economist's toolbox; nor, perhaps, was he sufficiently aware of the new impetus to measurement that Robert Solow brought to his problem 30 years after 1927, when the empirical studies of productivity trends by Colin Clark, Abramovitz, John Kendrick, Fabricant, Denison, Maddison, and others were made interpretable in terms of a time-shifting Wicksell-Douglas-Cobb function or more general form. Today we all speak of the ``residual'' --- the part of product growth attributable to technical change and not to inputs --- testimony to the power of an analytical idea.
+
+Henry Schultz aside, Douglas's colleagues --- Knight, Simons, Viner --- probably displayed inadequate interest in empirically measuring and describing real-world phenomena. Nonetheless, as I re-survey the early criticisms that Douglas's work received at the hands of Slichter, M. Copeland, J. M. Clark, Schumpeter, Frisch, Mendershausen, Durand, and other eminent contemporaries,\footnote{See the index to Douglas (1934) for many of these critiques or refer to Douglas (1965, 1972, 1976; Gunn and Douglas 1941) for his defenses and rebuttals.} I have to conclude that like Ricardo's early critics (Torrens, Malthus, Ricardo himself, \dots) they made good points that needed to be made; for example, aggregating physical capital does raise deep questions, as Joan Robinson has more recently insisted; assuming no technical progress in U.S. manufacturing for 1899--1922 did shock Schumpeter and should have done so; the data of inputs in Douglas's 3-dimensional scatter were almost collinear, making ``identification'' of separate factors' marginal products treacherous and raising legitimate doubts concerning the robustness of specifying the Cobb-Douglas (C-D) formula; and so forth.
+
+Along with Jacob Mosak, Gregg Lewis, Martin Bronfenbrenner, and others now eminent as economists, I attended Douglas's classes in those years when his classic 1934 \emph{Theory of Wages} was being completed for publication. It is remarkable how many of the words that I have been rereading in his 1927--76 writings we heard from his own lips during those fascinating classroom hours: the same poetry, anecdotes, rebuttals and defenses!
+
+I shall use my limited space here to review Douglas's achievement, indicate what his successors added to his procedures, and comment on the recurring puzzle concerning Wicksell's independent early discovery of the \(L^kC^{1-k}\) function and Douglas's confusion concerning Wicksteed's role. Finally, I shall ventilate some uneasinesses concern%[Page 925]
+ing the meaning of the cross-sectional investigations. Space does not permit an adequate treatment of the aggregation issue, concerning which the last word has not yet been said.
+
+\section*{The 1927 Beginning}
+
+However documented was Gilbert's meeting with Sullivan, we know how fame brushed against Cobb when Douglas spent a sabbatical at Amherst in 1927. Out of Douglas's many similar accounts I quote this sample from his 1972 autobiography:
+
+\begin{quote}
+\dots in 1927, \dots at Amherst, I charted on a logarithmic scale three variables \dots for American manufacturing for the years 1889 to 1922: an index of total fixed capital \dots (C), an index of the total number of wage earners employed in manufacturing (L), and an index of physical production in manufacturing (P). I noticed that the index of production lay between those for capital and labor and that it was from one-third to one-quarter of the relative distance between the lower index of labor and the higher index of capital. After consulting with my friend Charles W. Cobb, the mathematician, we \dots chose the Euler formula of a simple homogeneous function of the first degree, which that remarkable Englishman Philip Wicksteed had developed some years before (\(\mathrm P=\mathrm{bL^kC^{1-k}}\)). We found the values of \(\mathrm k\) and \(1-\mathrm k\) by the method of least squares to be 0.75 and 0.25, and that b was merely 1.01.
+
+The production values computed by this formula came close to the actual values with a very low average error. Furthermore, such deviations from the actual values as did occur were largely accounted for by known inaccuracies in the data themselves and by the business cycle. \dots A final test was that the actual shares of the total product received by labor and capital according to the National Bureau of Economic Research were almost the same as their exponents, namely 74.1 per cent for labor. [Pp. 46--47]
+\end{quote}
+
+I select this account because it is the one that most clearly misidentifies the roles of Wicksteed and Wicksell, illegitimately attributing to the former what belonged only to the latter, namely, pre-1927 use of \(L^kC^{1-k}\) form of a first-degree-homogeneous function. Only in his posthumous paper did Douglas (1976, p. 904) explicitly credit Wicksell with the C-D formula, clouding, however, the acknowledgment by the remark ``\dots a form that had also been used by Wicksteed [\emph{sic}] and Wicksell.''
+
+%%[Page 926]
+
+Actually, despite Douglass many accounts, Wicksteed never used the \emph{special species}, \(bL^kC^{1-k}\) of the \emph{general genus} of first-degree-homogeneous functions
+
+\begin{equation}\label{eq1}
+  \begin{gathered}
+	f(L,C) \equiv Lf(1,C/L) \equiv L\phi(C/L) \\
+	\equiv Cf(L/C,1) \equiv C\psi(L/C) \\
+	x^{-1} \phi(x)/\psi(x^{-1}) \equiv 1.
+  \end{gathered}
+\end{equation}
+
+Douglas was a most generous scholar. He quixotically put Cobb's name before his own and foolish posterity accepted that convention. Gunn, Bronfenbrenner, Schoenberg, and myriad other collaborators similarly received pride of place out of alphabetical order or seniority. Also, Douglas knew and cited the very pages in Wicksell's lectures --- the 1913 German translation since the 1934 English translation was not yet available --- where the production function is written in ``C-D'' form as \(P=a^\alpha b^\beta\) with \(\alpha + \beta = 1\). Why then did Douglas not accord, from 1934 on, unique priority to Wicksell for the C-D function?\footnote{Not to burden the text, I put in a footnote the gist of Douglas's other writings that bear on this Wicksteed-Wicksell issue. Cobb-Douglas (1928, pp. 151--52) said that the ``\dots [neoclassical, marginal-productivity] theory \dots [is] due to J. B. Clark [1899], Wicksteed, et al. \dots ;'' and that, among the wide class of first-degree-homogeneous functions \(f(L,C)\) that vanish whenever one or both factors vanish, `` … let us make a definite choice \dots  of the function \(P'=bL^kC^{1-k}\) [a species in which] the marginal productivity of labor is proportional to the production per unit of labor \dots [and likewise for capital].'' Though Douglas (1934) gave no specific citation to pre-1927 writers for the \(bL^kC^{1-k}\) formula, Douglas (1948, p. 6) said, ``We, Cobb and I, were both familiar with the Wicksteed analysis and Cobb was, of course, well versed in the history of Euler's theorem. At his suggestion, therefore, the sum of the exponents was tentatively made equal to unity in the formula \(P=bL^kC^{1-k}\).'' Again, one reads in Douglas (1967, p. 16); ``I am no mathematician, so I then went to my friend, Charles W. Cobb. \dots Almost immediately he remembered the Euler theorem of a simple homogeneous function of the first degree and suggested it [\emph{sic}] as a first approximation \(P=bL^kC^{1-k}\). \dots We remembered that this simple function [\emph{sic}] had been suggested and indeed laid down over thirty years before by that extraordinary genius Philip Wicksteed in his \emph{Coordination of the Laws of Distribution} [1894] and, later in his \emph{Common Sense of Political Economy} [1933]. \dots The same theorem had also been treated very elegantly by Leon Walras.'' In contradiction to this assertion by Douglas, Walras was actually confusedly critical of Wicksteed for espousing the general homogeneous function. Finally, Douglas (1976, p. 904) said that, at Cobb's suggestion,'' \dots  the formula \(P=bL^kC^{1-k}\) was adopted, a form that had also been used by Wicksteed [\emph{sic}] and Wicksell. This, following Euler [\emph{sic}], was a simple homogeneous function of the first degree.'' Here at long last is a proper recognition of Wicksell, confounded, however, by confusion with Wicksteed and Euler. Actually, as had to be obvious after the 1934 English translation of Wicksell's \emph{Lectures}, Wicksell had employed the \(a^\alpha b^{1-\alpha}\) formula more than a quarter of a century before 1927. In the recent Scandinavian journals, Olsson (1971) called attention to the appearance of it in Wicksell (1916); Velupillai (1973) then traced it back to Wicksell (1900) and even earlier to Wicksell (1896). If \(\theta\) is Wicksell's period of investment and \(T\) is primary land invested with \(L\) at the beginning of the production period, then output at \(\theta\) periods later of \(bL^k T^{1-k} \theta^\gamma, \quad \gamma>0, \quad 0 \le k \le 1\), is a proper example of an economic C-D function; by contrast, \(L^{1/3} T^{1/3} \theta^{1/3}\) is not. Nor are \(bL^{2/3} \theta^{1/3}\), \(bL^{2/3} \theta^{1/2}\), \(bL^{2/3} \theta^{1/6}\), unless we may consider there to be a factor before the \(L^{2/3}\) factor of the form \(b=\beta T^{1/3}\), with \(T\) either unity or constant at some agreed-upon level, \(\bar{T}\). The point is that \(\theta\) is \emph{not} an input logically parallel to \(L\) and \(T\).}
+
+%%[Page 927]
+
+After much pondering, I can offer only one hypothesis to cover the facts best, a hypothesis for which there is also other evidence: Often in the 1927--76 period Douglas momentarily became confused between the broad \emph{genus} of homogeneous functions and the narrow \emph{species} of the C-D form. (At other times he shows recognition of their differences; actually, in 1926, before the Cobb meeting, Douglas's assistant, Sidney Wilcox, had given him the form \([L^2+C^2 ]^{1/2 \epsilon} L^k C^h,\epsilon+k+h=1\), a form that includes the C-D formula as a special case when \(\epsilon = 0\) [but which, alas, does not preserve everywhere convex isoquants when \(\epsilon\) is not zero!]; see Douglas 1934, pp. 224--25.) Confusing homogeneity --- Euler's theorem and all that --- with the singular C-D case of constant relative shares and unity of what Hicks (1932) would later call the ``elasticity of substitution,'' Douglas sometimes credited Wicksteed, J. B. Clark, Walras, and all the neoclassicals with already knowing the C-D form. Wicksell was honored in Douglas (1934, pp. 54--55) for something else --- for his heuristic proof of Euler's theorem that homogeneity implies proper ``adding up'' and that uniform departures from constant returns to scale would result (1) in monopoly and destruction of competition if increasing returns to scale were universal and (2) in pulverization of the industry into an infinity of infinitesimal firms if decreasing returns to scale prevailed for firms that can be replicated ad infinitum.\footnote{Reserved for another occasion must be my resolution of the puzzle that exercised Barone, Walras, Pareto. Wicksell, Wicksteed, Hicks, and others. Can we relax the assumption of first-degree homogeneity for the production function of the observed \emph{competitive industry}? Is it not enough to assume ``merely'' that all viable \emph{competitive firms} enjoy only ``\emph{local}'' (not \emph{global}) first-degree homogeneity at the equilibrium bottom of their U-shaped cost curves? What these writers fail to bring out properly is that such an assumption about numerous such firms implies syllogistically that the \emph{industry} function is essentially (i.e., \emph{asymptotically}) first-degree homogeneous (see Samuelson 1967, pp. 129--35; 1973, pp. 329--35; 1976, p. 481, problem 10).} Douglas's words on Wicksell reveal confusion concerning the generality of the \(L^kC^{1-k}\) form, enough confusion to explain why he saw nothing special in Wicksell's use of this form.
+
+Leaving to Robert K. Merton the further study of the history and sociology of simultaneity and independence in scientific discovery (\`a la Darwin-Wallace or Newton-Leibnitz), we might turn to ask: ``How did Cobb chance on the sum-of-exponents formula?'' Wicksell (1896, 1900, 1901, 1916) had backed into it, beginning with simplest square-root examples such as \(bL^{1/2}\). If I were Cobb and Douglas asked me for a first-degree homogeneous function, my simplest first reply would be \(P=aL+bK\). Since this linear form would deny the law of diminishing returns, I would next turn to \(b\sqrt{LK}\), the unweighted geometric mean and from there to the weighted geometric mean that is the C-D formula.
+
+On resurveying the history, I now realize that the data Douglas %[Page 928]
+presented Cobb practically commanded the C-D formula. Let me explain.
+
+If the arcs \(\lbrack L(t),C(t),P(t) \rbrack\) stream out of a common base point forming distinct trends on semilog paper over the interval (1899--1922), and \(P(t)\) is always \emph{exactly} one-fourth the way up from \(L(t)\) to \(C(t)\), then the unique solution to the functional equation
+
+\begin{subequations}\label{eq2:all}
+\begin{align}
+\frac{\log {\lbrack P(t) \rbrack}-\log {\lbrack L(t) \rbrack}}{\log {\lbrack C(t) \rbrack}-\log {\lbrack L(t) \rbrack}} \equiv \frac14, 1899 \le t \le 1922 \\ %(2a)
+\intertext{is}
+P(t) \equiv bL(t)^{3/4}C(t)^{1/4} \hfill \\%(2b)
+b=1.0 \text{ if } L(1899)=C(1899)=P(1899)=1. \nonumber
+\end{align}
+\end{subequations}
+
+\noindent The empirical value for \(b\) of 1.01 merely reflected the inexactness of the regression for the initial base year.
+
+None of the authors began with the axiom of constant relative shares
+
+\begin{subequations}\label{eq3:all}
+\begin{align}
+0<\frac{L\lbrack\partial f(L,C)/\partial L \rbrack}{f(L,C)} \equiv k<1,%(3a)
+\intertext{from which one could deduce the formula}
+f(L,C) \equiv bL^k C^{1-k},0<k<1.%(3b)
+\intertext{Nor did they begin with unitary Hicks-Robinson elasticity of substitution:}
+\selectlanguage{russian}
+1= \sigma =\frac{f_L f_C}{ff_{LC}}=-\frac{d \log \lbrack L/C \rbrack}{d \log \lbrack f_L/f_C \rbrack} %(3с)
+\end{align}
+\end{subequations}
+\selectlanguage{english}
+
+\noindent where \(\lbrack f_L,f_C \rbrack\) represent the factors' respective partial derivatives calculated from (1). Cobb (and Wicksell before him) noticed that \(L^kC^{1-k}\) led to constant competitive wage share in national income of \(k\). Also, like Dalton [1920] before them, Cobb and Douglas recognized that labor's demand elasticity, for capital fixed, was \(1/(1-k)\) when its share was a constant of \(k\).
+
+Douglas was glad to find that Pigou (1933) confirmed his own estimate that the general demand for labor was highly elastic; it salved Douglas's conscience as a liberal to be able to believe that a slight cut in real wage rates would benefit rather than hurt labor's total real income. Douglas never squared his notions about an elastic \emph{real demand curve for labor as a whole} (a concept he shared with reactionaries such as T. N. Carver and E. Cannan) with the post-1936 Keynesian notion of a demand for labor that shifts with investment multiplicands and which depends crucially on how much of a drop in general prices is itself induced by a contrived cut in \emph{money} wage rates.
+
+% 
+
+%%[Page 929]
+
+\section*{The Magnum Opus}
+
+One lingers on the 1927 breakthrough because so much was accomplished at the very beginning. However, the 1934 \emph{Theory of Wages} is a rewarding classic in its own right. Not only does it present Douglas's econometric measurements on the \emph{supply} of factors of production,\footnote{See the companion piece on this topic by Albert Rees (this volume); also the generous address on Douglas at the University of Wisconsin of Glen Cain (1977), from which my opening quotation is taken.} but in addition it offers a rich menu dealing with the history of the subject.\footnote{My own first paper, Samuelson (1937), dealing esoterically with use of life-cycle saving data to infer cardinal additive utility \`a la Fisher and Ramsey, I now realize was triggered by Douglas's book and classroom discussion of Landry's theory of interest. History of doctrine to split hairs over what Ricardo (should have) meant is one thing; it is another to benefit from the many conflicting ideas nominated by past writers.}
+
+Supplementing the 1899--1922 time series, Douglas (1934) presents similar 1890--1926 evidence for Massachusetts analyzed by Cobb and also time series on New South Wales by Aaron Director, who for a time labored in the Douglas workshop (alongside a future Socialist party candidate for the vice-presidency, Maynard Krueger). Time-series investigations by others for New Zealand and South Africa are later reported on by Douglas. Although the significance for marginal products of production functions with time trends removed is unclear, Douglas and Cobb reported such results for any light they might give for understanding production movements.
+
+Paul Douglas was adept at explaining away most errors of fit. We students used to jest admiringly that his multiple correlation coefficients of .97 probably overflowed above 1.00 once he turned his serious attention to explaining observed squared errors; thus, the recorded depression \(C_t\) \emph{in place} was probably in excess of the true capital stock \emph{used}, …, etc. (I ought to report, though, that as a stunt I fitted the inadmissible form \(P=aL+bK\) to his 1899--1922 data and got the same multiple correlation coefficient of \(R = .97\) that he got from the C-D form, a lesson to me about collinearity that I have never ceased to profit from. As a by-product I mastered the Doolittle ritual in that Haskell Hall toil, an investment in human capital that I have not yet succeeded in amortizing.)
+
+\section*{Cross-Section Investigations}
+
+A new love began to occupy Douglas after his 1934 book was finished. The last years before his country and the Marines called him away from research he devoted to cross-section studies. These studies across industries --- performed with Grace Gunn, Marjorie Handsaker, %%[Page 930]
+Patricia Daly Ogburn, Martin Bronfenbrenner, Ernest Olson, and many others --- are summarized by Douglas's last will and testament to the economics profession in his 1947 Presidential Address, delivered just when he received the nod to campaign in 1948 as a Democrat for the U.S. Senate seat from Illinois.
+
+Do these cross-section studies make sense? What sense? I am not sure.
+
+First, let us take a case where they could make sense. Suppose corn is produced along a Hotelling line out of immobile labor and land. If we can observe the same mode of production everywhere but with the ratio of labor to land and corn to land falling steadily as we move uptown and encounter higher wage/rent ratios, then the observed spatial arcs \(\lbrack L(s),C(s),P(s) \rbrack\), like (2)'s temporal arcs, could provide us the scatter to which we can fit a \emph{unique} first-degree-homogeneous production function. Such a cross-sectional study I could understand.
+
+But Douglas does nothing like that. Rather, imagine that there are three industries in society producing, respectively, the goods corn, cloth, and caviar. Each is produced by \emph{its own} first-degree-homogeneous neoclassical function, \(f_i (L_i,C_i )\). Suppose society's total \(L\) and \(C\) are divided into observable \((L_i,C_i )\) breakdowns, \(\sum_1^3 L_i =L\) and \(\sum_1^3 C_i =C\). Even if we could observe physical quantities \((q_1,q_2,q_3 )\), what scatter across \emph{disparate} industries would give us an \emph{aggregate} production function? Will even the knowledge of the price data of that one period, \((P_1,P_2,P_3;W,\text{ the wage}; R,\text{ the rental or price of the nonlabor factor})\), help?
+
+Let me take the case most favorable to Douglas, unrealistic as it is. (1)~Assume everyone has the same homothetic tastes so every dollar is spent alike whatever the income distribution. (2) Assume each industry has its own neoclassical production function. (3) Assume that no problems of measuring aggregated ``capital'' arise, because a homogeneous physical magnitude is malleable for every use (``leets,'' steel spelled backward, in Mrs. Robinson's caustic terminology). (4) Assume perfect competition, with observable goods and factor prices \((P_1,\dots ,P_n;W,R)\).
+
+Then there does exist a neoclassical first-degree-homogeneous \emph{aggregate} function, which out of total labor and capital produces total real product:
+
+\begin{equation}\label{eq4}
+  \begin{gathered}
+	\vb{Q} = \vb{f} (\vb{L},\vb{C}) 
+	= \max_{L_j, C_j} u \lbrack f_1 (L_1,C_1 ), \dots ,f_n (L_n,C_n ) \rbrack \\
+	\text{subject to }\sum_1^nC_j =C,\sum_1^nL_j =L
+  \end{gathered}
+\end{equation}% (4)
+
+\noindent where \begin{equation*}
+u \lbrack q_1, \dots ,q_n \rbrack \equiv \lambda^{-1} u \lbrack \lambda q_1, \dots ,\lambda q_n \rbrack
+\end{equation*}
+
+%%[Page 931]
+
+\noindent is a first-degree-homogeneous function precisely measuring ``output as a whole.'' On this, see my articles for the Hicks and Machlup \emph{Festschrifts} (Samuelson 1968, pp. 473--77; 1978, p. 114, n. 3).
+
+I have given the cross-section caper all the rope it can use. What can one do with it on the basis of the following observations: \((P_1 q_1,L_1,RC_1; \allowbreak  \dots ; \allowbreak P_n q_n,L_n,RC_n; \allowbreak R,W,P_1, \dots ,P_n )\). Certainly, a properly weighted average of all industries' relative wage shares should give the aggregate wage share:
+
+\begin{equation}\label{eq5}
+\vb{k}=\frac{WL}{\sum_1^n P_i q_i}=\sum_1^n \omega_j \frac{WL_j}{P_j q_j}\text{ where }\omega_j=\frac{P_j q_j}{\sum_1^n P_i q_i}.%(5)
+\end{equation}
+
+But this is a triviality. What warrant is there for putting such a \(\vb{k}\) into \(bL^kC^{1-k}\) and pretending that \(\vb{f} (\vb{L},\vb{C})\) of (4) is ``approximated'' by such a pretension? I can think of no justification. A follower of Douglas might wish to derive comfort from the fact that, in many different times, a Bowley will report pretty much the same relative wage share for a particular country like the United States or the United Kingdom. But why cannot such a fact, or alleged fact, stand on its own bottom, gaining and losing nothing from being coupled with an aggregate neoclassical production function?
+
+My point is this: the dispersion of industries is \emph{not} the scatter needed for the aggregate \(\vb{f} (\vb{L},\vb{C})=\vb{Q}\) function; on the latter, Douglas has at best, in any chosen year, only one observed point; and from one point no one can infer elasticities of demand, of substitution, or anything else. The reader may convince himself of this by the following consideration: suppose every \(f_i (L_i,C_i)\) in (3) is different from Cobb-Douglas, instead being of CES form with \(\sigma_i\)'s that all \emph{differ} from unity by the same amount. Still the \emph{same} scatter as in the universal C-D case would be observed by Douglas and Gunn or Bronfenbrenner or Olson! No hint of the true \(\partial^2 \vb{f} (\vb{L},\vb{C})/\partial \vb{L} \partial \vb{C}\) is inferrable.\footnote{Fig. 2 of Bronfenbrenner-Douglas (1939, p. 781) might, after modification and interpretation, be of some help in connection with the problem of my n. 3 above, which deals with relations of firms in the \emph{same} industry; I am unable to see how it can give \emph{across-industry} scatters a relevance to society's aggregate production function (even when that aggregate function happens to exist). My severe criticism may, therefore, not tell against the kind of cross-sectional studies of Griliches-Ringstad (1971) that deal with \emph{different firms} producing the \emph{same industry's} good. Professor Griliches has been kind enough to suggest the following additional references: Marschak and Andrews (1944, 1945); Mundlak and Hoch (1965); M. Nerlove (1965); Dr\`eze, Zellner, and Kmenta (1966). The CES function referred to in my text seems first to have been discovered by Bergson (1936), but in connection with consumer indifference contours: writing it as \(\lbrack aL^\gamma+bC^\gamma \rbrack^{1/\gamma}, \gamma<1\), Bergson showed it to be the only case with both homothetic contours and capability of being numbered by additive-independent sums, \(U_1 (L)+U_2 (C)=\lbrack aL^\gamma+bC^\gamma \rbrack \gamma^{-1}\text{ or }\lbrack a(L-1)^\gamma+b(C-1)^\gamma \rbrack \gamma^{-1}\); also, it has the same income elasticity of marginal utility whatever the prices or income. For \(\gamma=1\), we have infinite substitutability or \emph{E}-of-\emph{S}, \(\sigma =(1-\gamma)^{-1}=\infty;\text{ for }\gamma \to -\infty\), we have fixed proportions and zero \emph{E}-of-\emph{S}, \(\sigma =(1-\gamma)^{-1} \to 0;\text{ for }\gamma \to 0\), evaluating the indeterminate form gives the C-D case, \(\sigma =(1-\gamma)^{-1} \to 1\). I have heard it said that H. D. Dickinson and Champernowne, as well as Solow (1956) and Arrow et al. (1961), represent post-Bergson independent rediscoveries of the CES family. The CES family can he shown to be the general solution to the following partial differential equation: The elasticity of demand when we vary any factor alone is to be inversely proportional to the share of the remaining factors; the special C-D case is where the proportionality factor is \(\sigma =1\).}
+% 
+
+%%[Page 932]
+
+\section*{A Strategic Counterexample}
+
+Is this too skeptical an appraisal? Should I not concede that, at the least, these cross-sectional investigations have tested --- and verified triumphantly --- the hypothesis that the C-D exponents do sum to unity to a good approximation as the neoclassical marginal-productivity wants them to do? On examination I find that, when one specifies \(Q=bL^k C^h\) and lets the cross-sectional data decide whether \(k+h=1\), that result tends to follow purely as a cross-sectional \emph{tautology} based on the \emph{residual} computation of the nonwage share. Even if the data had been generated by an existent aggregate C-D function, the post-1934 methodology does not give an unbiased estimate of the proper \(\vb{k}\) and \(1-\vb{k}\); finally one sees the answer to the puzzle that cross-sectional estimates yield \(k\)'s that look low, being nearer \(1/2\) than are the aggregate shares and the time-series estimate.
+
+An example will bring this out. Let there be four industries, not necessarily competitive or with constant returns to scale. Out of GNP or national income of 100, let the dollar values (and value addeds) of the industries be, respectively, \((10,20,30,40)=(P_j q_j )\) with respective wage bills of \((6,12,24,32)=(WL_j )\), and residually computed profit returns to ``property'' or to the nonlabor factor of (4, 8, 6, 8). No one can stop us from labeling this last vector as \((RC_j )\), as J. B. Clark's model would permit --- even though we have no warrant for believing that noncompetitive industries have a common profit rate \(R\) and use leets capital \((C_j )\) in proportion to the \((P_j q_j-WL_j )\) elements!
+
+Now subject the data to the least-square logarithmic regression estimation procedures of cross-sectional Douglasism, which follow the suggestion of David Durand (1937) of treating \(k\) and \(h\) as unconstrained parameters in
+
+\begin{equation}\label{eq6}
+  \begin{gathered}
+	P_j q_j = \log \beta +k \log {(WL_j)}+h \log {(P_j q_j-WL_j)}\\
+	+\text{ error}_j\quad(j=1,2,3,4).%(6)
+  \end{gathered}
+\end{equation}
+
+
+Since industries 1 and 2 have identical wage shares of 0.6 and industries 3 and 4 have identical shares of 0.8, the regression will afford a \emph{perfect fit} to the scatter if one put a straight line on double-log paper through the two \emph{pooled} pairs of observations. Then
+
+\begin{equation}\label{eq7}
+  \begin{gathered}
+	\vb{\hat{k}}=\frac{\log (10+20) / (4+8)-\log (30+40) / (6+8)}{\log (6+12) / (4+8)-\log (24+32) / (6+8)}\\
+	=\frac{\log {(1/2)}}{\log {(3/8)}} =0.707%(7)
+  \end{gathered}
+\end{equation}
+
+%%[Page 933]
+
+\begin{equation}\label{eq8}
+\vb{\hat{h}}=1-\vb{\hat{k}}=0.293.%(8)
+\end{equation}
+
+Why has the freedom to make \(h\) differ from \(1-k\) been rejected by the scatter? Because nature really favors constant returns to scale? Nonsense: she has not shown us her petticoat. Profit and wages add up to total \(P_j q_j \) along any fixed ray not because Euler's theorem is revealed to apply on that ray but rather because of the accounting identity involved in the residual definition of profit: with \(Pq_j \) a trivial first-degree-homogeneous sum of \(WL_j\) and \(RC_j\) along any \(L_j/C_j\) ray, how can its form of \((WL_j )^k (RC_j )^h\) give other than \(k+h=1\)?
+
+This example of perfect fit is contrived to be overstrong, to bring out dramatically what is less obviously present in more realistic samples. Several suspicions have been uncovered, which will have to be cleared up if future credence is given to such cross-section-of-industries exercises:
+
+1. The smallness of \(1-k-h\) is an artifact of the tautologies, not a robust test of the conditions for competition and the relevance of marginal productivity.
+
+2. If a true \(\vb{k}\) and \(1-\vb{k}\) exist --- a big if --- the proposed regressions do not provide unbiased estimates of them. (The example's true \(\vb{k}\) is \(0.74=\lbrack 0.1+0.2\rbrack[0.6\rbrack+\lbrack 0.3+0.4\rbrack\lbrack 0.8\rbrack\), not 0.707. The least-squares procedure to get 0.707 takes no account of the greater value weight of industries 3 and 4; if they were expanded a trillionfold, Douglas's computers would still produce 0.707 instead of 0.800! Since realism probably calls for a bell-shaped distribution of \(k_j\)'s around some central value, failing to give due weight to industries' value weights ought to bias both \(\vb{k}\) and \(1-\vb{k}\) toward \(1/2\).)
+
+3. The across-industry scatter at a point of time provides \emph{at best} only one observation on the true aggregate \(\vb{f} (\vb{L},\vb{C})\) even when the latter exists. The elasticity of aggregate wage demand could be anything far from \(1/(1-\vb{k})\) and still the \emph{same} point-of-time industry scatter could be observed.
+
+It is a late hour to raise these doubts about the Emperor's clothes, but not until undertaking the present assignment did this child give the matter of across-industry fitting the careful attention it deserves and does not seem to have received.\footnote{Bronfenbrenner (1939, 1944) and Reder (1943) have registered understandable qualms; concerning them I have to be overly brief. Bronfenbrenner (1939) makes the valid deductive point: if C-D obtains with \(Q=bL^k C^{1-k}\) and \(0<k<1\), inelastic Marshallian demand cannot obtain for \((L,W⁄P_Q)\) or for \((L⁄C,\partial Q⁄\partial L)\). To this Douglas could reply: ``Were the observed \((L,W⁄P_Q)\) truly inelastic, my attempted fit to it to the scatter of \(\lbrack L/C, b(C/L)^{1-k} \rbrack \) would fail for all \(k\). So my method could be self-checking.'' As referee, I could agree but with a qualification: ``Douglas might get what `looks like' a good fit to the \(\lbrack L⁄C,Q⁄C\rbrack\) scatter, while not sufficiently noting how poor might still be the more relevant fit to \emph{higher} derivatives like \(\lbrack L ⁄C,\partial Q⁄\partial L\rbrack\).'' To isolate the main point of Reder (1943), consider firms producing the same product under pure competition in
+the product market and with a common good's price, \(P_Q\). To simplify, let them all have the same (leets) capital stock, \(\bar C_1=\bar C_2= \dots =\bar C_n=\bar C\) and the same \emph{intra}-firm production function of Clarkian type: \(Q_j=C_j f(L_j⁄C_j )=f(L_j⁄C)=f(L_j)\), if we adopt the convention of \(\bar C=1\). Reder posits that the firms have different degrees of \emph{monopsony} power in local labor markets. Hence, \(L_j\)'s differ and so must the \(Q_j\)'s or \(f(L_j)\)s. Reder correctly asserts that the observed (labor, real-wage) scatter, \((L_j,W_j⁄P_Q )\), will then \emph{not} be generated by the marginal-productivity partial derivatives of Douglas's estimated across-firms production function, the latter being fitted to Douglas's scatter of \((L_j, Q_j)\) or \((L_j⁄P_Q, Q_k)\). Suppose the latter fall \emph{exactly} on a straight line with slope \(\alpha\) when double-log paper is used to chart (\(\log Q_j, \log L_j)\); then Douglas gets \(\hat f(L)\) exactly \(bL^\alpha, 0<\alpha<1\). Reder can say that observed labor share, \(k=\sum_1^n W_j L_j ⁄ P_Q \sum_1^n q_j \), need not equal \(\alpha\) and indeed must fall below \(\alpha\) under posited universal monopsony. Douglas, however, has this defense: ``My regression procedure will reveal Reder's shortfall of \(k\) from \(\alpha\) \emph{if} it is there; but in fact it has not turned up in any of several studies (both cross-sectional and time-series). And, since I use data on \(L_j\) and \(W_jL_j\) and \(P_Q q_j\), my data could reveal the exact departures of the \((W_j⁄P_Q ,L_j )\) scatter from the \(\lbrack \partial f(L_j )⁄\partial L,L_j \rbrack\) scatter. Moreover, I have correctly identified the true production function and am able to estimate precisely Reder's degree-of-monopsony values from calculable \((W_j⁄P_Q )f'(L_j⁄C)\) ratios!'' Bronfenbrenner (1944) abandons Douglas's across-firms regressions of the double-log form, \(\log (P_jQ_j) =\beta^{\prime} + k\log (L_j) +k \log (P_jQ_j-W_jL_j) +\text{error}_j \). Instead he proposes a new across-firm regression of ``net-product type.'' In Reder's case of \(Q=\sum_1^n q_j , P_j=P_Q, C_1= \ldots =C_n=1\), where intrafirm technology is of the same \(q_j⁄C=f(L_j⁄C)=b(L_j⁄C)\) form, but where zero monopsony obtained and where free entry with zero monopsony of capital equalized the profit rate and made profit's share \(RC_j\), Bronfenbrenner would be regressing \(P_Q q_j-RC_j\) against \(L_j\); or, what is then the same thing, regressing observed \(WL_j\) against \(L_j\). Naturally he must get a ray through the origin of slope \(W\) for a perfect fit in the (\(L_j,WL_j)\) quadrant. \emph{This} he calls \emph{his} new ``interfirm `production' function.'' Why use the words ``production function'' for such an accounting-tautology or competition-arbitrage relation (or, where the \(C_j\)'s differ, why call the observed multiple-regression relation, \(P_Q q_j=WL_j+RC_j+\text{zero-error}_j\) an \emph{inter}-firm ``production function'')? The question asks itself. As applied to data on \(\lbrack L_j,P_jQ_j-WL_j\text{ or }P_jQ_j-W_jL_j \rbrack\) generated by industries and firms of different technologies and facing different degrees of goods'-market and factors'-market monopolistic and monopsonistic imperfections, what does high or low \(R^2\) for Douglas's double-log or for Bronfenbrenner's linear fit tell us about ``empirical verification of marginal-productivity distribution theory''?} We honor a great scholar by %%[Page 934]
+taking his efforts seriously, not by fobbing them off with fulsome, inattentive praise. I hope that someone skilled in econometrics and labor economics will audit and evaluate my critical findings.
+
+\section*{Successors to Douglas}
+
+Economic statisticians were confronted with rises in output that fully matched the rises in one of the inputs alone. In sharp contrast to Douglas's 1899--1922 manufacturing sample, which showed the rise in the capital/output ratio called for by the statical Clark theory, Kuznets, Abramovitz, and others often found no such change in the capital/output ratio as capital ``deepened'' relative to labor.
+
+Reality commanded that technical change, or \(t\) itself, be put into the production function, so that it takes the Solow (1957) form
+
+\begin{equation}\label{eq9}
+Q=F(L,K;t),\quad\partial f(\qquad)/\partial t \ge 0.%(9)
+\end{equation}
+
+%%[Page 935]
+
+However, with \(C(t)⁄L(t)\) showing strong collinear growth with the variate \(t\) itself, there would be no hope of ``identifying'' reasonable parameters for \((k,a)\) in \(be^{at} L^kC^{1-k}\), at least from \(\lbrack Q(t),L(t),C(t)\rbrack\) data alone.
+
+Abramovitz (1956), eschewing refined theory, had combined \(L(t)\) and \(C(t)\) into a linear weighted sum, \(\alpha L(t)+\beta C(t)\), called ``total resources''. Comparing this fabrication with \(Q(t)\), he showed how we must invoke a positive role of technical change (i.e., of \(t\) itself) as a proxy for productivity improvements in (9)'s version of (1)'s production function.
+
+Solow, having won theoretical fame in 1956, in 1957 sought empirical fortune by supplementing the \(\lbrack Q(t),L(t),C(t)\rbrack\) data by independent relative-share data on \( \lbrack W(t) L(t)⁄P(t) Q(t) \rbrack=\lbrack \rho(t)\rbrack\). Stipulating that this represented observations on marginal products
+
+\begin{equation}\label{eq10}
+\frac{W(t)L(t)}{P(t)Q(t)} =\frac{\partial f\lbrack L(t),C(t);t\rbrack}{\partial L(t)} \frac{L(t)}{f\lbrack L(t),C(t);t\rbrack} ,\text{ marginal product}%(10)
+\end{equation}
+
+\[f\lbrack L,C;t\rbrack \equiv \lambda^{-1} f\lbrack \lambda L,\lambda C;t\rbrack,\text{ first-degree homogeneity},\]
+
+Solow (1957) showed that U.S. GNP data for 1909--49 were consistent with Hicks-neutral technical change, with
+
+\begin{equation}\label{eq10}
+f\lbrack L(t),C(t);t\rbrack \equiv A(t)f\lbrack L(t),C(t)\rbrack \equiv A(t)f \left[ 1,\frac{C(t)}{L(t)} \right] L(t). %(11)
+\end{equation}
+
+Since \(\lbrack \rho(t)\rbrack \) was virtually constant at the level around 2/3, Solow could determine the exogenous ``residual'' productivity function, \(A(t) \), approximately by
+
+\begin{subequations}\label{eq12:all}
+\begin{align}
+\begin{gathered}
+A(t)=\frac{Q(t)}{L(t)^{2/3}C(t)^{1/3}}%(12a)
+\end{gathered}
+\end{align}
+\text{or, pretty much equivalently, from cumulating over time,}
+\begin{align}
+\begin{gathered}
+\frac{A(t+1)-A(t)}{A(t)} =\frac{Q(t+1)-Q(t)}{Q(t)} -\rho(t) \frac{L(t+1)-L(t)}{L(t)} \\
+-\lbrack 1-\rho(t)\rbrack \frac{C(t+1)-C(t)}{C(t)}.%(12b)
+\end{gathered}
+\end{align}
+\end{subequations}
+
+Solow not only validated Abramovitz's pragmatic picture, he provided it with a shiny new theoretical frame, and thereby launched a hundred studies of the ``residual,'' the factor \(A(t)\) or \(e^{at}\) in front of neoclassical production functions. Not the least amusing of the subsequent findings is that of Weitzman (1970) for the USSR: the land of the labor theory of value turned out to have an especially high \(1-k\) for capital! And its residual for technological creativity and imitativeness turned out to be especially low in comparison with the anarchic %%[Page 936]
+capitalistic system! (This would all be more ironical if it were not the case that countries as alike as Norway and Sweden differ considerably in the importance of the measured residual; and countries different in almost every way are often measured to have similar residuals! Moreover, scholars who have continued Weitzman's kind of analysis have differed with his pessimistic estimate for the residual even though they have confirmed his suspicion of \(\sigma\) as being less than C-D's unity.)
+
+Let me conclude by examining whether Kaldor and neo-Keynesians are right in suggesting that the Cobb-Douglas results are a cooked-up foregone conclusion from the nature of the statistical methodology! Obviously, so long as Bowley's law of (almost) constancy of labor's share holds, no Clarkian can get a good fit with a function far away from Cobb-Douglas so long as shifts in the \(C(t)⁄L(t)\) ratio are not serendipitously just offset by labor-saving rather than capital-saving biases in technical change!
+
+A follower of Douglas would want to say, ``If the data were generated by Clarkian functions, those functions would have to be near Cobb-Douglas if the only change in them was of a `purely labor-augmenting' kind and if \(C(t)⁄L(t)\) in \emph{efficiency} units varied during the period of observation.'' Actually this last ``if'' is \emph{not} strongly realized in the historical data, and hence we cannot rule out the possibility that some other model could generate the same observations, perhaps one of a dozen from Kaldor's own stable. Nor does it rule out the induced labor-saving syndrome of Marx, Hicks (1932), and Fellner (1967), which was finally given logical coherence in the analysis of Samuelson (1965, 1966) and Phelps-Drandakis (1966) of the Charles Kennedy and the von Weizs\"acker versions of choices between investing in labor-economizing or capital-economizing efforts.\footnote{To make sense of the notion that deepening of capital relative to labor induces labor-saving innovations to offset rising \(W⁄R\) costs, see Samuelson (1965, 1966) and Phelps-Drandakis (1966) with their references to von Weizs\"acker and Kennedy.}
+
+\section*{Vale!}
+
+Enough has been said to validate the encomium for Paul Douglas quoted earlier from Glen Cain. The last word should be about Paul Douglas, the person and scholar.
+
+I can see him now, all 250 pounds of his pre-Marines self stretched out in Roman fashion on the Cobb Hall classroom desk, puffing furiously on his cigarette, his seersucker suit wrinkled and his shirt collars pointing up convexly toward the heavens. High noon it was for Hutchins's University of Chicago, and for Douglas as a creative %[Page 937]
+scholar. For me and my lucky classmates it was dawn of a more exciting day.
+
+Since then I have encountered some of the best teachers in the world and some of the worst. But only after youth had stolen away did I learn to measure its ineffable joys.
+
+\begin{thebibliography}{00}
+
+\bibitem{Abramovitz:1}
+Abramovitz, Moses. \foreignlanguage{english}{``Resource and Output Trends in the United States since 1870.'' \emph{A.E.R.} 46 (suppl.; May 1956): 5--23.}
+
+\bibitem{Arrow:1}
+Arrow, K.J.; Chenery, H.B.: Minhas, B.S.; and Solow, R.M. \foreignlanguage{english}{``Capital-Labor Substitution and Economic Efficiency.'' \emph{Rev. Econ. and Statis.}, 43 (August 1961): 225--50.}
+
+\bibitem{Bergson:1}
+Bergson, Abram. \foreignlanguage{english}{``Real Income, Expenditure Proportionality, and Frisch's ``New Methods of Measuring Marginal Utility.'' \emph{Rev. Econ. Studies} 4 (October 1936): 3352.}
+
+\bibitem{Bronfenbrenner:1}
+Bronfenbrenner, Martin. \foreignlanguage{english}{``The Cobb-Douglas Function and Trade-Union Policy.'' \emph{A.E.R.} 29 (December 1939): 793--96.}
+
+\bibitem{Bronfenbrenner:2}
+---. \foreignlanguage{english}{``Production Functions: Cobb-Douglas, Interfirm, Intra firm.'' \emph{Econometrica} 12 (January 1944): 35--44.}
+
+\bibitem{Bronfenbrenner:1}
+Bronfenbrenner, Martin, and Douglas, P. \foreignlanguage{english}{H. ``Cross-Section Studies in the Cobb-Douglas Function.'' \emph{J.P.E.} 47, no. 6 (December 1939): 761--85.}
+
+\bibitem{Cain:1}
+Cain, Glen G. \foreignlanguage{english}{``A Tribute to Paul H. Douglas, 1892--1976, Labor Economist and Senator.'' Paper presented at the Labor Economics Workshop, University of Wisconsin. October 11, 1977.}
+
+\bibitem{Clark:1}
+Clark, John Bates. \foreignlanguage{english}{\emph{The Distribution of Wealth; A Theory of Wages, Interest and Profits}. New York: Macmillan. 1899.}
+
+\bibitem{Cobb:1}
+Cobb, Charles W., and Douglas, P. \foreignlanguage{english}{H. ``A Theory of Production.'' \emph{A.E.R.} 18 (suppl.; March 1928): 139--65.}
+
+\bibitem{Dalton:1}
+Dalton, Hugh. \foreignlanguage{english}{\emph{Some Aspects of the Inequality of Incomes in Modern Communities}. London: Routledge, 1920.}
+
+\bibitem{Douglas:1}
+Douglas, Paul H. \foreignlanguage{english}{\emph{The Theory of Wages}. New York: Macmillan, 1934.}
+
+\bibitem{Douglas:2}
+---. \foreignlanguage{english}{``Are There Laws of Production?'' \emph{A.E.R.} 38 (March 1948): 1--41.}
+
+\bibitem{Douglas:3}
+---. \foreignlanguage{english}{``Comments on the Cobb-Douglas Production Function.'' In \emph{The Theory and Empirical Analysis of Production: Studies in Income and Wealth}, edited by Murray Brown. Vol. 31, New York: Nat. Bur. Econ. Res., 1967.}
+
+\bibitem{Douglas:4}
+---. \foreignlanguage{english}{\emph{In the Fullness of Time}: The Memoirs of Paul H. Douglas. New York: Harcourt, Brace, Jovanovich, 1972.}
+
+\bibitem{Douglas:5}
+---. \foreignlanguage{english}{``The Cobb-Douglas Production Function Once Again: Its History, Its Testing, and Some Empirical Values.'' \emph{J.P.E.} 84, no. 5 (October 1976): 903--15.}
+
+\bibitem{Dreze:1}
+Dr\`eze, Jacques; Zellner, Arnold; and Kmenta, J. \foreignlanguage{english}{``Specification and Estimation of Cobb-Douglas Production Function Models.'' \emph{Econometrica} 34 (October 1966): 784--95.}
+
+\bibitem{Durand:1}
+Durand, David. \foreignlanguage{english}{``Some Thoughts on Marginal Productivity, with Special Reference to Professor Douglas Analysis.'' \emph{J.P.E.} 45, no. 6 (December 1937): 740--58.}
+
+\bibitem{Fellner:1}
+Fellner, William J. \foreignlanguage{english}{``Comment on the Induced Bias.'' \emph{Econ.} J. 77(September 1967): 662--64.}
+
+%[Page 939]
+
+\bibitem{ManIdeas:1}
+\emph{Man and His Ideas}, edited by Jacob S. Dreyer. Lexington, Mass.: Lexington, 1978.
+
+\bibitem{Solow:1}
+Solow, Robert M. \foreignlanguage{english}{``The Production Function and the Theory of Capital.'' \emph{Rev. Econ. Studies} 23, no. 2 (1956): 101--8.}
+
+---. ``Technical Change and the Aggregate Production Function.'' \emph{Rev. Econ. Statis.} 39 (August 1957): 312--20.
+
+\bibitem{Velupillai:1}
+Velupillai, Kumaraswamy. \foreignlanguage{english}{``The Cobb-Douglas or the Wicksell Function.'' \emph{Econ. and Hist.} 16 (1973): 11--113.}
+
+\bibitem{Weitzman:1}
+Weitzman, Martin L. \foreignlanguage{english}{``Soviet Postwar Economic Growth and Capital-Labor Substitution.'' \emph{A.E.R.} 60 (September 1970): 672--92.}
+
+\bibitem{Wicksell:1}
+Wicksell, Knut. \foreignlanguage{english}{``Ein neues Prinzip der gerechen Besteurung.'' \emph{Finanztheoretische Untersuchungen}, Jena (1896). Translated as ``A New Principle of Just Taxation.'' In \emph{Classics in the Theory of Public Finance}, edited by R. A. Musgrave and A. T. Peacock. London: Macmillan, 1958.}
+
+\bibitem{Wicksell:2}
+---. \foreignlanguage{english}{``Marginal Productivity as the Basis of Distribution in Economics.'' \emph{Ekon. Tidskrift} (1900): 305--37. Reproduced in \emph{Selected Papers on Economic Theory}. London: Allen \& Unwin, 1958.}
+
+\bibitem{Wicksell:3}
+---. \foreignlanguage{english}{\emph{Lectures on Political Economy}, Vol. I. London; Macmillan. 1934. Swedish, 1901; German, 1913; English. 1934.}
+
+\bibitem{Wicksell:4}
+---. \foreignlanguage{english}{``The `Critical Point' in the Law of Decreasing Agricultural Productivity.'' \emph{Ekon. Tidskrift} (1916), pp. 285--92. Reproduced in \emph{Selected Papers on Economic Theory}.}
+
+\bibitem{Wicksteed:1}
+Wicksteed, P. \foreignlanguage{english}{H. An Essay on the \emph{Coordination of the Laws of Distribution}. London; Macmillan, 1894.}
+
+\bibitem{CommonSense:1}
+---. \emph{Common Sense of Political Economy}. 2 vols. London: Routledge, 1933
+
+\end{thebibliography}
+
+\end{document}

@@ -263,3 +263,10 @@ TSWLatexianTemp*
 
 # standalone packages
 *.sta
+
+# # игнорировать все файлы
+# **
+
+# # кроме .tex и .pdf
+# !**.tex
+# !**.pdf
