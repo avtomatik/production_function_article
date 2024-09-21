@@ -270,3 +270,6 @@ TSWLatexianTemp*
 # # кроме .tex и .pdf
 # !**.tex
 # !**.pdf
+
+# Other
+.DS_Store
